@@ -337,8 +337,8 @@
                 <a class="logo link" href="/">Web<span class="footer-logo-studio">Studio</span></a>
                 <address class="address">г. Киев, пр-т Леси Украинки, 26</address>
                 <ul class="footer-contacts list">
-                    <li class="mail-link"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li><a class="footer-contacts-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li><a class="footer-contacts-item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
                 </ul>
             </div>
             <div class="footer-socials">
@@ -382,15 +382,69 @@
                     </li>
                 </ul>
             </div>
+            <div class="footer-subs">
+                <p class="footer-subs-title">Подпишитесь на рассылку</p>
+                <form action="" class="footer-subs-form">
+                    <label class="footer-subs-form-field">
+                        <input name="user-email" class="footer-subs-form-input" type="email" placeholder="E-mail">
+                    </label>
+                   <span class="qqq">
+                        <button class="footer-subs-btn" type="submit">Подписаться
+                            <svg class="footer-btn-icon" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                                                
+                    </span>                  
+                </form>
+            </div>
         </div>       
     </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close-btn" data-modal-close>
-                <svg width="18" height="18">
+                <svg class="modal-close-icon" width="18" height="18">
                     <use href="./images/sprite.svg#icon-close"></use>
                 </svg>
             </button>
+            <form action="" class="modal-form">
+                <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                <label class="modal-form-field">
+                    Имя
+                    <span class="modal-form-input-wrapper">
+                        <input name="user-name" class="modal-form-input" type="text">
+                        <svg class="modal-form-icon" width="18" heigh="18">
+                            <use href="./images/sprite.svg#icon-person-black"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Телефон
+                    <span class="modal-form-input-wrapper">
+                        <input name="user-phone" class="modal-form-input" type="tel">
+                        <svg class="modal-form-icon" width="18" heigh="18">
+                            <use href="./images/sprite.svg#icon-phone-black"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Почта
+                    <span class="modal-form-input-wrapper">
+                        <input name="user-name" class="modal-form-input" type="email">
+                        <svg class="modal-form-icon" width="18" heigh="18">
+                            <use href="./images/sprite.svg#icon-email-black"></use>
+                        </svg>
+                    </span>
+                </label>
+                <label class="modal-form-field">
+                    Комментарий
+                    <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
+                </label>
+                <input id="user-term" type="checkbox" name="user-term" class="modal-form-term hidden">
+                <label class="modal-form-term-desc" for="user-term">Соглашаюсь с рассылкой и принимаю<a href="">Условия
+                        договора</a></label>          
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
         </div>
     </div>
     <script src="./js/modal.js"></script>
